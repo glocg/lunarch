@@ -1,12 +1,17 @@
 {
   "name": "lunarch",
   "version": "1.0.0",
-  "description": "lunarch system",
+  "description": "Lunarch system",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "keywords": ["discord", "oauth2", "express", "login"],
+  "keywords": [
+    "discord",
+    "oauth2",
+    "express",
+    "login"
+  ],
   "author": "sen",
   "license": "MIT",
   "dependencies": {
@@ -14,6 +19,7 @@
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^5.1.6",
+    "pg": "^8.11.1"
   }
 }
