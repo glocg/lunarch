@@ -1,0 +1,19 @@
+<%- include("partials/header", { user }) %>
+<section class="min-h-screen flex flex-col items-center justify-center pt-24 pb-16 text-white">
+  <h1 class="text-3xl font-bold mb-6">Discord ID ile Kullanıcı Bilgisi Ara</h1>
+  <form method="POST" class="w-full max-w-md bg-gray-800 p-6 rounded-lg shadow-lg mb-4">
+    <input type="text" name="discordId" placeholder="Discord ID girin" class="w-full p-3 rounded text-black mb-4" required>
+    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded transition">Ara</button>
+  </form>
+  <% if (error) { %>
+    <p class="text-red-400"><%= error %></p>
+  <% } %>
+  <% if (result) { %>
+    <div class="mt-6 bg-gray-700 p-4 rounded text-left">
+      <p><strong>ID:</strong> <%= result.id %></p>
+      <p><strong>Kullanıcı:</strong> <%= result.username %>#<%= result.discriminator %></p>
+      <p><strong>Email:</strong> <%= result.email %></p>
+    </div>
+  <% } %>
+</section>
+<%- include("partials/footer") %>

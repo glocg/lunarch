@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discord Intelligence - Advanced Discord Lookup Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#6366f1',secondary:'#a855f7'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+background-color: #0f1117;
+color: #fff;
+}
+.hero-gradient {
+background-color: #0f1117;
+}
+.primary-button {
+background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
+}
+.secondary-button {
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.stat-gradient {
+background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+}
+.nav-container {
+background: rgba(30, 30, 46, 0.8);
+backdrop-filter: blur(10px);
+}
+</style>
+</head>
+<body>
+<header class="fixed top-0 left-0 w-full z-50">
+<div class="nav-container mx-auto rounded-full px-4 py-2 my-4 max-w-6xl">
+<nav class="flex items-center justify-between">
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center text-primary mr-2">
+<i class="ri-discord-fill ri-lg"></i>
+</div>
+<span class="font-['Pacifico'] text-xl text-white">logo</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#" class="text-white hover:text-primary transition-colors whitespace-nowrap">Home</a>
+<a href="#" class="text-gray-300 hover:text-primary transition-colors whitespace-nowrap">Features</a>
+<a href="#" class="text-gray-300 hover:text-primary transition-colors whitespace-nowrap">Process</a>
+<a href="#" class="text-gray-300 hover:text-primary transition-colors whitespace-nowrap">Pricing</a>
+<a href="#" class="text-gray-300 hover:text-primary transition-colors whitespace-nowrap">FAQ</a>
+</div>
+<a href="/login" class="primary-button text-white px-6 py-2 rounded-button flex items-center whitespace-nowrap">
+<i class="ri-discord-fill ri-lg mr-2"></i>
+Discord ile Giriş Yap
+</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero-gradient min-h-screen flex items-center justify-center pt-24 pb-16 w-full" style="background-image: url('https://readdy.ai/api/search-image?query=futuristic%20digital%20interface%20with%20purple%20and%20blue%20glowing%20elements%2C%20abstract%20technology%20background%20with%20dark%20theme%2C%20sleek%20modern%20design%20with%20subtle%20grid%20patterns%20and%20data%20visualization%20elements%2C%20perfect%20for%20a%20tech%20product%20hero%20section&width=1920&height=1080&seq=123456&orientation=landscape')">
+<div class="container mx-auto px-4 flex flex-col items-center">
+<div class="text-center max-w-4xl mx-auto">
+<div class="inline-flex items-center bg-black bg-opacity-20 rounded-full px-4 py-1 mb-8">
+<div class="w-4 h-4 flex items-center justify-center mr-2">
+<i class="ri-shield-check-line text-green-400"></i>
+</div>
+<span class="text-gray-300 text-sm">Trusted by 10,000+ users worldwide</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold mb-4">Discord Intelligence</h1>
+<h2 class="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 mb-8">Redefined</h2>
+<p class="text-gray-300 text-xl mb-12 max-w-3xl mx-auto">
+The most advanced Discord lookup service with real-time data, comprehensive analytics, and unmatched accuracy.
+</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+<button class="primary-button text-white px-8 py-3 rounded-button flex items-center whitespace-nowrap">
+<i class="ri-play-circle-line ri-lg mr-2"></i>
+Start Free Trial
+</button>
+<button class="secondary-button text-white px-8 py-3 rounded-button flex items-center whitespace-nowrap">
+<i class="ri-movie-line ri-lg mr-2"></i>
+Watch Demo
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+<div class="stat-gradient rounded-lg p-6 flex flex-col items-center">
+<h3 class="text-4xl font-bold text-blue-400 mb-2">1M+</h3>
+<p class="text-gray-400">Lookups</p>
+</div>
+<div class="stat-gradient rounded-lg p-6 flex flex-col items-center">
+<h3 class="text-4xl font-bold text-purple-400 mb-2">99.9%</h3>
+<p class="text-gray-400">Uptime</p>
+</div>
+<div class="stat-gradient rounded-lg p-6 flex flex-col items-center">
+<h3 class="text-4xl font-bold text-indigo-400 mb-2">&lt;1s</h3>
+<p class="text-gray-400">Response</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-[#0f1117]">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Powerful Features</h2>
+<p class="text-gray-300 max-w-2xl mx-auto">Discover why Discord Intelligence is the preferred choice for server owners, moderators, and community managers worldwide.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-gray-800 rounded-lg p-8 transition-transform hover:transform hover:scale-105">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-500 bg-opacity-20 rounded-lg mb-6">
+<i class="ri-search-line ri-xl text-blue-400"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Advanced User Lookup</h3>
+<p class="text-gray-300">Get detailed information about any Discord user with just their ID or username, including server history and activity metrics.</p>
+</div>
+<div class="bg-gray-800 rounded-lg p-8 transition-transform hover:transform hover:scale-105">
+<div class="w-12 h-12 flex items-center justify-center bg-purple-500 bg-opacity-20 rounded-lg mb-6">
+<i class="ri-bar-chart-line ri-xl text-purple-400"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Real-time Analytics</h3>
+<p class="text-gray-300">Monitor server activity, member engagement, and growth trends with our comprehensive analytics dashboard.</p>
+</div>
+<div class="bg-gray-800 rounded-lg p-8 transition-transform hover:transform hover:scale-105">
+<div class="w-12 h-12 flex items-center justify-center bg-indigo-500 bg-opacity-20 rounded-lg mb-6">
+<i class="ri-shield-line ri-xl text-indigo-400"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Security Monitoring</h3>
+<p class="text-gray-300">Identify potential security threats and suspicious users before they impact your community with our advanced risk assessment.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-[#0f1117]">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2">
+<h2 class="text-4xl font-bold mb-6">How It Works</h2>
+<p class="text-gray-300 mb-8">Our platform provides seamless integration with Discord's API to deliver accurate and comprehensive data in real-time.</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-8 h-8 flex items-center justify-center bg-blue-500 bg-opacity-20 rounded-full mr-4 mt-1">
+<span class="text-blue-400 font-bold">1</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Connect Your Server</h3>
+<p class="text-gray-300">Link your Discord server to our platform with just a few clicks.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-8 h-8 flex items-center justify-center bg-purple-500 bg-opacity-20 rounded-full mr-4 mt-1">
+<span class="text-purple-400 font-bold">2</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Configure Settings</h3>
+<p class="text-gray-300">Customize your dashboard and set up the metrics that matter most to you.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-8 h-8 flex items-center justify-center bg-indigo-500 bg-opacity-20 rounded-full mr-4 mt-1">
+<span class="text-indigo-400 font-bold">3</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Access Insights</h3>
+<p class="text-gray-300">Start exploring detailed analytics and user information immediately.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=futuristic%20dashboard%20interface%20with%20dark%20theme%2C%20showing%20discord%20analytics%2C%20user%20profiles%20and%20server%20statistics%2C%20clean%20modern%20UI%20design%20with%20blue%20and%20purple%20accent%20colors%2C%20professional%20data%20visualization&width=600&height=500&seq=123457&orientation=portrait" alt="Discord Intelligence Dashboard" class="rounded-lg shadow-2xl">
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-[#0f1117]">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Pricing Plans</h2>
+<p class="text-gray-300 max-w-2xl mx-auto">Choose the perfect plan for your Discord community needs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+<div class="bg-gray-800 rounded-lg p-8 border border-gray-700 transition-transform hover:transform hover:scale-105">
+<h3 class="text-2xl font-bold mb-2">Basic</h3>
+<p class="text-gray-400 mb-6">For small communities</p>
+<div class="text-4xl font-bold mb-6">$9<span class="text-gray-400 text-lg font-normal">/month</span></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Up to 5,000 members</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Basic user lookup</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Server activity reports</span>
+</li>
+<li class="flex items-start text-gray-500">
+<i class="ri-close-line mr-2 mt-1"></i>
+<span>Advanced analytics</span>
+</li>
+<li class="flex items-start text-gray-500">
+<i class="ri-close-line mr-2 mt-1"></i>
+<span>Security monitoring</span>
+</li>
+</ul>
+<button class="w-full secondary-button text-white py-3 rounded-button whitespace-nowrap">Get Started</button>
+</div>
+<div class="bg-gray-800 rounded-lg p-8 border-2 border-primary relative transition-transform hover:transform hover:scale-105">
+<div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold">
+MOST POPULAR
+</div>
+<h3 class="text-2xl font-bold mb-2">Pro</h3>
+<p class="text-gray-400 mb-6">For growing communities</p>
+<div class="text-4xl font-bold mb-6">$29<span class="text-gray-400 text-lg font-normal">/month</span></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Up to 20,000 members</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Advanced user lookup</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Detailed analytics dashboard</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Basic security monitoring</span>
+</li>
+<li class="flex items-start text-gray-500">
+<i class="ri-close-line mr-2 mt-1"></i>
+<span>API access</span>
+</li>
+</ul>
+<button class="w-full primary-button text-white py-3 rounded-button whitespace-nowrap">Get Started</button>
+</div>
+<div class="bg-gray-800 rounded-lg p-8 border border-gray-700 transition-transform hover:transform hover:scale-105">
+<h3 class="text-2xl font-bold mb-2">Enterprise</h3>
+<p class="text-gray-400 mb-6">For large communities</p>
+<div class="text-4xl font-bold mb-6">$79<span class="text-gray-400 text-lg font-normal">/month</span></div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Unlimited members</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Complete user history</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Advanced analytics & reporting</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Premium security monitoring</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-green-400 mr-2 mt-1"></i>
+<span>Full API access</span>
+</li>
+</ul>
+<button class="w-full secondary-button text-white py-3 rounded-button whitespace-nowrap">Contact Sales</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-[#0f1117]">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Trusted by Discord Communities Worldwide</h2>
+<p class="text-gray-300 max-w-2xl mx-auto">Join thousands of Discord servers that rely on our platform for community management.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-500 bg-opacity-10 rounded-full mb-4">
+<i class="ri-gamepad-line ri-2x text-blue-400"></i>
+</div>
+<p class="font-bold">GamersUnite</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-purple-500 bg-opacity-10 rounded-full mb-4">
+<i class="ri-code-line ri-2x text-purple-400"></i>
+</div>
+<p class="font-bold">DevNetwork</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-indigo-500 bg-opacity-10 rounded-full mb-4">
+<i class="ri-music-line ri-2x text-indigo-400"></i>
+</div>
+<p class="font-bold">MusicLovers</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-500 bg-opacity-10 rounded-full mb-4">
+<i class="ri-book-line ri-2x text-blue-400"></i>
+</div>
+<p class="font-bold">StudyGroup</p>
+</div>
+</div>
+<div class="mt-20 max-w-4xl mx-auto bg-gray-800 rounded-lg p-8">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="w-20 h-20 flex items-center justify-center bg-blue-500 bg-opacity-10 rounded-full">
+<i class="ri-user-line ri-2x text-blue-400"></i>
+</div>
+<div>
+<p class="text-lg italic mb-4">"Discord Intelligence has completely transformed how we manage our gaming community. The user lookup feature has been invaluable for identifying problematic users and keeping our server safe."</p>
+<p class="font-bold">Michael Rodriguez</p>
+<p class="text-gray-400">Community Manager, GamersUnite</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-[#0f1117]">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto bg-gradient-to-r from-blue-900 to-purple-900 rounded-lg p-12 text-center">
+<h2 class="text-4xl font-bold mb-6">Ready to Elevate Your Discord Experience?</h2>
+<p class="text-gray-300 mb-8 max-w-2xl mx-auto">Join thousands of Discord communities that trust our platform for comprehensive analytics and user management.</p>
+<button class="primary-button text-white px-8 py-3 rounded-button flex items-center mx-auto whitespace-nowrap">
+<i class="ri-rocket-line ri-lg mr-2"></i>
+Start Your Free Trial
+</button>
+<p class="text-gray-400 mt-4">No credit card required. 14-day free trial.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#0f1117] py-16">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="flex items-center mb-6">
+<div class="w-10 h-10 flex items-center justify-center text-primary mr-2">
+<i class="ri-discord-fill ri-lg"></i>
+</div>
+<span class="font-['Pacifico'] text-xl text-white">logo</span>
+</div>
+<p class="text-gray-400 mb-6">The most advanced Discord lookup service with real-time data and comprehensive analytics.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full">
+<i class="ri-twitter-x-line text-gray-400"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full">
+<i class="ri-discord-line text-gray-400"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full">
+<i class="ri-github-line text-gray-400"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Product</h3>
+<ul class="space-y-4">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">API</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Integrations</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Resources</h3>
+<ul class="space-y-4">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-6">Company</h3>
+<ul class="space-y-4">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-500 mb-4 md:mb-0">© 2025 Discord Intelligence. All rights reserved.</p>
+<div class="flex space-x-4">
+<div class="flex items-center">
+<i class="ri-visa-line ri-lg text-gray-400 mr-2"></i>
+</div>
+<div class="flex items-center">
+<i class="ri-mastercard-line ri-lg text-gray-400 mr-2"></i>
+</div>
+<div class="flex items-center">
+<i class="ri-paypal-line ri-lg text-gray-400 mr-2"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script id="navbarScript">
+document.addEventListener('DOMContentLoaded', function() {
+const header = document.querySelector('header');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 10) {
+header.classList.add('shadow-lg');
+} else {
+header.classList.remove('shadow-lg');
+}
+});
+});
+</script>
+</body>
+</html>
