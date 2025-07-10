@@ -50,4 +50,6 @@ saveUser(user);
   }
 });
 
-app.listen(3000, () => console.log("http://localhost:3000 adresinde çalışıyor"));
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
